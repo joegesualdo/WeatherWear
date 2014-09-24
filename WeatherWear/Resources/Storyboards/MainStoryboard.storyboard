@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dVv-Si-SCR">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="ACh-nw-wAr">
+            <objects>
+                <viewController id="dVv-Si-SCR" customClass="WWHomeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gfk-oL-sA6"/>
+                        <viewControllerLayoutGuide type="bottom" id="KsL-Xd-DQI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ljJ-J7-d1r">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iK4-kz-k0l" userLabel="Press Me">
+                                <rect key="frame" x="290" y="84" width="64" height="30"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonPressed:" destination="dVv-Si-SCR" eventType="touchUpInside" id="3gT-pw-8iC"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Hello World" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOR-Hf-Mwb" userLabel="Hello World">
+                                <rect key="frame" x="279" y="289" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eOR-Hf-Mwb" secondAttribute="trailing" constant="10" id="Aq6-ch-a7v"/>
+                            <constraint firstItem="eOR-Hf-Mwb" firstAttribute="top" secondItem="iK4-kz-k0l" secondAttribute="bottom" constant="30" id="SEk-9K-ar2"/>
+                            <constraint firstItem="iK4-kz-k0l" firstAttribute="leading" secondItem="ljJ-J7-d1r" secondAttribute="leadingMargin" constant="5" id="f7B-ec-bBt"/>
+                            <constraint firstItem="eOR-Hf-Mwb" firstAttribute="leading" secondItem="ljJ-J7-d1r" secondAttribute="leadingMargin" constant="10" id="gHq-6S-hm9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="iK4-kz-k0l" secondAttribute="trailing" constant="5" id="hgi-V1-N7V"/>
+                            <constraint firstItem="iK4-kz-k0l" firstAttribute="top" secondItem="gfk-oL-sA6" secondAttribute="bottom" constant="10" id="qw3-eA-Nv4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="eOR-Hf-Mwb" id="YIz-Ta-fGp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WZE-Oy-J4X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="359" y="367"/>
+        </scene>
+    </scenes>
+</document>

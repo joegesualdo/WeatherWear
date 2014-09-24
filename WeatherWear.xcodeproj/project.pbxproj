@@ -12,6 +12,9 @@
 		780A8922A24D429984ADAC12 /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A66427ED2DC468DAB462268 /* libPods-unit_tests.a */; };
 		BAF5F66D3E2046FF82298B67 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CC3054C65364BF4BF7C51DB /* main.m */; };
 		BF8DD5285D2B409A828B9E49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5857B40A6934BDB9B0B769B /* Foundation.framework */; };
+		E9BCF13019D346E7004E9C84 /* HomepageTestCast.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */; };
+		E9BCF13219D34965004E9C84 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */; };
+		E9BCF13519D349FB004E9C84 /* WWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,10 @@
 		9D0E5DE89EC94A18A390D2D1 /* WeatherWear.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherWear.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5857B40A6934BDB9B0B769B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DEF81E59B2C84ED29B646EF9 /* WeatherWear-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeatherWear-Prefix.pch"; sourceTree = "<group>"; };
+		E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageTestCast.m; sourceTree = "<group>"; };
+		E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		E9BCF13319D349FB004E9C84 /* WWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWHomeViewController.h; sourceTree = "<group>"; };
+		E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHomeViewController.m; sourceTree = "<group>"; };
 		EB6C60558BFF47FF807177E0 /* WWAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
 		ECF896BF007749B6BE03C89C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04554799CD04AC2A12A7144 /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
@@ -64,7 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				37B28C3495D34F6FB30E6614 /* WeatherWear */,
-				3777A5985A644627AA9AF69F /* UnitTests */,
+				3777A5985A644627AA9AF69F /* Specs */,
 				BB07DCAF79104C91B101AEDD /* Frameworks */,
 				79F19866761A4871AA40BBB2 /* Products */,
 				F04554799CD04AC2A12A7144 /* Pods-unit_tests.xcconfig */,
@@ -98,12 +105,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		3777A5985A644627AA9AF69F /* UnitTests */ = {
+		3777A5985A644627AA9AF69F /* Specs */ = {
 			isa = PBXGroup;
 			children = (
+				E4058E805F34421E86E9D085 /* Acceptance */,
+				E9BCF13619D35070004E9C84 /* Unit */,
 				FFA1BD9D13E74BD8A474619C /* Resources */,
-				E4058E805F34421E86E9D085 /* Tests */,
 			);
+			name = Specs;
 			path = UnitTests;
 			sourceTree = "<group>";
 		};
@@ -137,6 +146,8 @@
 		52086A69AC34425D82911675 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E9BCF13319D349FB004E9C84 /* WWHomeViewController.h */,
+				E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +171,7 @@
 		7A1F205EED7F4B07B1CB0FEB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -219,11 +231,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4058E805F34421E86E9D085 /* Tests */ = {
+		E4058E805F34421E86E9D085 /* Acceptance */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */,
+			);
+			name = Acceptance;
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E9BCF13619D35070004E9C84 /* Unit */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Tests;
+			name = Unit;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F1874332893C4F09B6B9A0A5 /* Categories */ = {
@@ -316,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BCF13219D34965004E9C84 /* MainStoryboard.storyboard in Resources */,
 				39F1892847834414BBCA18E1 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B92BF42C75D47F984A8B137 /* WWAppDelegate.m in Sources */,
+				E9BCF13519D349FB004E9C84 /* WWHomeViewController.m in Sources */,
 				BAF5F66D3E2046FF82298B67 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +414,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9BCF13019D346E7004E9C84 /* HomepageTestCast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
