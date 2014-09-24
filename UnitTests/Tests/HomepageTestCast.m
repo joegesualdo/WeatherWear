@@ -11,14 +11,18 @@
 
 SpecBegin(Homepage)
 
-describe(@"When button is pressed", ^{
-    
-    it(@"'Hello World' label is shown", ^{
-        
-        [tester tapViewWithAccessibilityLabel:@"Press Me" traits:UIAccessibilityTraitButton];
-        UILabel *label = (UILabel *)[tester waitForViewWithAccessibilityLabel:@"Hello World"];
-        
-        expect(label.hidden).to.equal(NO);
+describe(@"When user starts app", ^{
+    context(@"and enters valide email and password", ^{
+        it(@"they should see the current weather", ^{
+            [tester enterText:@"joe@gmail.com" intoViewWithAccessibilityLabel:@"Email Text Field"];
+            [tester enterText:@"password" intoViewWithAccessibilityLabel:@"Password Text Field"];
+            [tester tapViewWithAccessibilityLabel:@"Submit"];
+
+            UILabel *weatherLabel = (UILabel *)[tester waitForViewWithAccessibilityLabel:@"Current Weather"];
+            
+            
+            expect(weatherLabel).to.beTruthy;
+        });
     });
     
 });

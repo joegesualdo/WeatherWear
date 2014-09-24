@@ -14,7 +14,7 @@
 		BF8DD5285D2B409A828B9E49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5857B40A6934BDB9B0B769B /* Foundation.framework */; };
 		E9BCF13019D346E7004E9C84 /* HomepageTestCast.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */; };
 		E9BCF13219D34965004E9C84 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */; };
-		E9BCF13519D349FB004E9C84 /* WWHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */; };
+		E9BCF13A19D35649004E9C84 /* WWSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF13919D35649004E9C84 /* WWSignupViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +40,8 @@
 		DEF81E59B2C84ED29B646EF9 /* WeatherWear-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "WeatherWear-Prefix.pch"; sourceTree = "<group>"; };
 		E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomepageTestCast.m; sourceTree = "<group>"; };
 		E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
-		E9BCF13319D349FB004E9C84 /* WWHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWHomeViewController.h; sourceTree = "<group>"; };
-		E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWHomeViewController.m; sourceTree = "<group>"; };
+		E9BCF13819D35649004E9C84 /* WWSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSignupViewController.h; sourceTree = "<group>"; };
+		E9BCF13919D35649004E9C84 /* WWSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSignupViewController.m; sourceTree = "<group>"; };
 		EB6C60558BFF47FF807177E0 /* WWAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
 		ECF896BF007749B6BE03C89C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04554799CD04AC2A12A7144 /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
@@ -146,8 +146,7 @@
 		52086A69AC34425D82911675 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				E9BCF13319D349FB004E9C84 /* WWHomeViewController.h */,
-				E9BCF13419D349FB004E9C84 /* WWHomeViewController.m */,
+				E9BCF13719D3562E004E9C84 /* Signup */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -246,6 +245,15 @@
 			);
 			name = Unit;
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E9BCF13719D3562E004E9C84 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				E9BCF13819D35649004E9C84 /* WWSignupViewController.h */,
+				E9BCF13919D35649004E9C84 /* WWSignupViewController.m */,
+			);
+			name = Signup;
 			sourceTree = "<group>";
 		};
 		F1874332893C4F09B6B9A0A5 /* Categories */ = {
@@ -405,8 +413,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B92BF42C75D47F984A8B137 /* WWAppDelegate.m in Sources */,
-				E9BCF13519D349FB004E9C84 /* WWHomeViewController.m in Sources */,
 				BAF5F66D3E2046FF82298B67 /* main.m in Sources */,
+				E9BCF13A19D35649004E9C84 /* WWSignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
