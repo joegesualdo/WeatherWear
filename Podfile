@@ -9,6 +9,7 @@ target :unit_tests, :exclusive => true do
   pod 'OCMock'
   pod 'OHHTTPStubs'
   pod 'KIF', '~> 3.0'
+  pod 'MBFaker'
 end
 
 # Tests weren't building on xCode 6. Getting 'cannot find XCTest.h'

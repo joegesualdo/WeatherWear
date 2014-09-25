@@ -10,6 +10,7 @@
 
 @interface WWUserNetworkManager : WWNetworkManager
 
-+(void)POSTUserWithEmail:(NSString *)email andPassword: (NSString *)password;
++(void)POSTCreateUserWithEmail:(NSString *)email andPassword: (NSString *)password thenSignIn:(BOOL)signIn completionHandler: (void (^)(BOOL))completed;
++(void)POSTSignInUserWithEmail:(NSString *)email andPassword: (NSString *)password completionHandler: (void (^)(BOOL))completed;
 
 @end
