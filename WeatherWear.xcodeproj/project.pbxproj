@@ -15,6 +15,8 @@
 		E9BCF13019D346E7004E9C84 /* HomepageTestCast.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF12F19D346E7004E9C84 /* HomepageTestCast.m */; };
 		E9BCF13219D34965004E9C84 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */; };
 		E9BCF13A19D35649004E9C84 /* WWSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E9BCF13919D35649004E9C84 /* WWSignupViewController.m */; };
+		E9C9022B19D45C0A0031FAE3 /* WWNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9022A19D45C0A0031FAE3 /* WWNetworkManager.m */; };
+		E9C9022E19D460980031FAE3 /* WWUserNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E9C9022D19D460980031FAE3 /* WWUserNetworkManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +44,10 @@
 		E9BCF13119D34965004E9C84 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		E9BCF13819D35649004E9C84 /* WWSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWSignupViewController.h; sourceTree = "<group>"; };
 		E9BCF13919D35649004E9C84 /* WWSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWSignupViewController.m; sourceTree = "<group>"; };
+		E9C9022919D45C0A0031FAE3 /* WWNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWNetworkManager.h; sourceTree = "<group>"; };
+		E9C9022A19D45C0A0031FAE3 /* WWNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWNetworkManager.m; sourceTree = "<group>"; };
+		E9C9022C19D460980031FAE3 /* WWUserNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WWUserNetworkManager.h; sourceTree = "<group>"; };
+		E9C9022D19D460980031FAE3 /* WWUserNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WWUserNetworkManager.m; sourceTree = "<group>"; };
 		EB6C60558BFF47FF807177E0 /* WWAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = WWAppDelegate.h; sourceTree = "<group>"; };
 		ECF896BF007749B6BE03C89C /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04554799CD04AC2A12A7144 /* Pods-unit_tests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.xcconfig"; path = "Pods/Pods-unit_tests.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 		A2E42C92E16942DF81031DEB /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				E9C9022819D45BD00031FAE3 /* Networking */,
 				AFA9A063334442B2AA55F088 /* Controllers */,
 				274FB867D4954C74993A75EC /* DataSources */,
 				43A982DA60114C97997841E6 /* Delegates */,
@@ -254,6 +261,25 @@
 				E9BCF13919D35649004E9C84 /* WWSignupViewController.m */,
 			);
 			name = Signup;
+			sourceTree = "<group>";
+		};
+		E9C9022819D45BD00031FAE3 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9022F19D467D20031FAE3 /* User */,
+				E9C9022919D45C0A0031FAE3 /* WWNetworkManager.h */,
+				E9C9022A19D45C0A0031FAE3 /* WWNetworkManager.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		E9C9022F19D467D20031FAE3 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				E9C9022C19D460980031FAE3 /* WWUserNetworkManager.h */,
+				E9C9022D19D460980031FAE3 /* WWUserNetworkManager.m */,
+			);
+			name = User;
 			sourceTree = "<group>";
 		};
 		F1874332893C4F09B6B9A0A5 /* Categories */ = {
@@ -412,8 +438,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9C9022B19D45C0A0031FAE3 /* WWNetworkManager.m in Sources */,
 				3B92BF42C75D47F984A8B137 /* WWAppDelegate.m in Sources */,
 				BAF5F66D3E2046FF82298B67 /* main.m in Sources */,
+				E9C9022E19D460980031FAE3 /* WWUserNetworkManager.m in Sources */,
 				E9BCF13A19D35649004E9C84 /* WWSignupViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
